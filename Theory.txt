@@ -1,0 +1,108 @@
+//1st question
+There are several ways to define the value 21.9 to a variable in C++:
+Implicit conversion: You can assign the value 21.9 directly to a floating-point variable,
+such as float or double. The value will be implicitly converted to the appropriate type. For example:
+double x = 21.9;
+float y = 21.9;
+Explicit conversion: You can also use an explicit type conversion to assign
+the value 21.9 to a variable of a different type. For example:
+int x = (int)21.9;
+This will truncate the fractional part of the value and assign the integer 29 to the x variable.
+Constructor initialization: You can use the constructor initialization syntax to create
+a variable and assign it the value 21.9. For example:
+double x{21.9};
+float y{21.9};
+This syntax can be used with any built-in or user-defined type that has a constructor that takes a single argument.
+
+
+
+//2nd question
+In C++ (and other programming languages), prefix and postfix notation refer to the order in which the operator
+appears in relation to the operands in an expression.
+
+In prefix notation, the operator is written before the operands. For example, the expression "++x" is written in
+prefix notation and means "increment x by 1".
+
+In postfix notation, the operator is written after the operands. For example, the expression "x++" is written in
+postfix notation and also means "increment x by 1".
+
+There are some differences between prefix and postfix notation that you should be aware of:
+
+Evaluation order: In prefix notation, the operator is evaluated before the operands, while in postfix notation,
+the operator is evaluated after the operands.
+
+Return value: In prefix notation, the expression returns the value of the operand after it has been modified by the operator.
+In postfix notation, the expression returns the value of the operand before it has been modified by the operator.
+
+Side effects: Prefix and postfix notation can have different side effects, depending on the operator being used.
+For example, when using the increment operator (++), prefix notation will increment the value of the operand before it
+is used in the rest of the expression,while postfix notation will increment the value of the operand after it has been
+used in the rest of the expression.
+
+In general, it is good practice to use prefix notation when you want to modify a variable and use its new value in an
+expression, and use postfix notation when you want to use a variable's value and then modify it.
+
+//3rd question
+In C++, the private keyword is used to specify the accessibility of class members. Class members declared as private
+can only be accessed by other member functions of the class, and are not accessible to the outside world.
+This is one of the principles of object-oriented programming known as encapsulation, which allows you to hide
+the implementation details of a class from the outside world and provide a clear and stable interface for using the class.
+
+For example:
+
+Copy code
+class MyClass
+{
+private:
+    int x;
+    int y;
+
+public:
+    void setX(int val) { x = val; }
+    int getX() { return x; }
+};
+In this example, the variables x and y are private members of the MyClass class.
+They can only be accessed by other member functions of the class, such as setX and getX. If you try to access x or y
+from outside the class, you will get a compile-time error.
+
+Private members are typically used to store internal state information that is needed by the class,
+but should not be modified or accessed directly by the outside world. This helps to ensure the integrity of the class
+and prevent unintended side effects.
+
+//4th question
+In C++, the void keyword is used to specify that a function does not return a value, while the int keyword
+is used to specify that a function returns an integer value.
+
+Here is an example of a function with a void return type:
+
+
+void printMessage()
+{
+    std::cout << "Hello, World!" << std::endl;
+}
+This function does not return a value, it simply prints a message to the console.
+
+Here is an example of a function with an int return type:
+
+
+int add(int x, int y)
+{
+    return x + y;
+}
+This function takes two integer arguments, x and y, and returns their sum as the result of the function.
+
+When you define a function in C++, you must specify the return type of the function in the function declaration.
+This tells the compiler what type of value the function will return, if any. If the function does not return a value,
+you should use the void keyword as the return type.
+If the function does return a value, you should use the appropriate data type as the return type,
+such as int, float, or double.
+
+//5th question
+set<string> st;
+    st.insert({ "geeks", "for", "geeks", "org" });
+
+    // 'it' evaluates to iterator to set of string
+    // type automatically
+    for (auto it = st.begin(); it != st.end(); it++)
+        cout << *it << " ";
+

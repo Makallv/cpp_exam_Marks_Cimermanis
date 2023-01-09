@@ -1,0 +1,6 @@
+C:/Users/marks/OneDrive/Clion/Exam/cmake-build-debug/CMakeFiles/Exam.dir
+C:/Users/marks/OneDrive/Clion/Exam/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/marks/OneDrive/Clion/Exam/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/marks/OneDrive/Clion/Exam/cmake-build-debug/test/CMakeFiles/Exam_test.dir
+C:/Users/marks/OneDrive/Clion/Exam/cmake-build-debug/test/CMakeFiles/edit_cache.dir
+C:/Users/marks/OneDrive/Clion/Exam/cmake-build-debug/test/CMakeFiles/rebuild_cache.dir
