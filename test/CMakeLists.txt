@@ -1,7 +1,7 @@
 enable_testing()
-set(GTEST_LIBRARY "C:/Users/marks/Downloads/googletest/googletest/cmake-build-debug/lib/libgtest.a")
-set(GTEST_MAIN_LIBRARY "C:/Users/marks/Downloads/googletest/googletest/cmake-build-debug/lib/libgtest_main.a")
-set(GTEST_INCLUDE_DIR "C:/Users/marks/Downloads/GTest/include")
+set(GTEST_LIBRARY "C:/Users/marks/googletest/cmake-build-debug/lib/libgtest.a")
+set(GTEST_MAIN_LIBRARY "C:/Users/marks/googletest/cmake-build-debug/lib/libgtest_main.a")
+set(GTEST_INCLUDE_DIR "C:/Users/marks/googletest/googletest/include")
 
 find_package(GTest REQUIRED)
 
